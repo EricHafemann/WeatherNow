@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/app.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<main class="container">
+
+    <h1>🌤 WeatherNow</h1>
+    <p class="subtitle">Descubra o clima de qualquer cidade.</p>
+
+    <form id="weather-form">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cidade"
+                placeholder="Digite uma cidade..."
+                autocomplete="off"
+            >
+
+            <button class="enviar">
+                Buscar
+            </button>
+        </div>
+
+        <div id="erro">
+            
+        </div>
+
+    </form>
+
+    <div class="weather-card" id="weather-card">
+
+    <h2 id="city-name">Cidade</h2>
+
+    <div class="temperature">
+        <span id="temperature">--</span>°C
+    </div>
+
+    <div class="weather-info">
+
+        <div class="info">
+            <span>Sensação</span>
+            <strong id="feels-like">--°C</strong>
+        </div>
+
+        <div class="info">
+            <span>Umidade</span>
+            <strong id="humidity">--%</strong>
+        </div>
+
+        <div class="info">
+            <span>Vento</span>
+            <strong id="wind">-- km/h</strong>
+        </div>
+
+        <div class="info">
+            <span>Atualizado</span>
+            <strong id="time">--:--</strong>
+        </div>
+
+    </div>
+
+</div>
+
+</main>
+
+</body>
+</html>
